@@ -1,8 +1,8 @@
 import { createContext } from "react";
-import { RestaurantType } from "../models/restaurantType";
+import { restaurantType } from "../models/restaurantType";
 
 export type RestaurantContextType = {
-  restaurants: RestaurantType[];
+  restaurants: restaurantType[];
   userName: string;
 };
 
