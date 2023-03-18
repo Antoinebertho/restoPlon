@@ -9,7 +9,7 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex justify-center text-teal-600 sm:justify-start">
             <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-              Resto © 
+              RestoPlon © 
             </h1>
           </div>
 
