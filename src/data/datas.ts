@@ -15,20 +15,20 @@ export const restaurants = [
       },
     },
     {
-      id: 1,
-      name: "Le Bain",
-      address: "75bis rue de l'eau, 29000 Quimper",
-      description_short: "Familial et végétarien",
-      description_long:
-        "Pour les amoureux des légumes et des produits de saison, Le Bain est un endroit idéal. Le tout dans un lieu agréable et cosy.",
-      img: "/assets/Le bain.jpg"
-      /*"https://www.google.com/url?sa=i&url=https%3A%2F%2Fvisitbath.co.uk%2Ffood-and-drink%2Frestaurants&psig=AOvVaw08Wfzs5hb3qcBWRgVTZNFu&ust=1676632167576000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJD28dfzmf0CFQAAAAAdAAAAABAJ"*/,
-      menu: {
-        entrees: ["entree 1", "entree 2"],
-        dishes: ["plat 1", "plat 2", "plat 3"],
-        deserts: ["desert 1", "desert 2"],
+        id: 1,
+        name: "Le Balto",
+        address: "15 Rue Mazarine, 75006 Paris",
+        description_short: "Brasserie parisienne",
+        description_long:
+          "Soupe à l'oignon, charcuterie et steaks servis dans une brasserie haut de gamme avec des salles décorées dans des styles différents.",
+        img: "/assets/le balto.png"
+        /*"https://www.google.com/maps/uv?pb=!1s0x47e671d8b9183cef:0x999004ac679e6812!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipPLd5qp49GeRegeQVn4k65QcVF0UBSl5YMCKVDY%3Dw520-h350-n-k-no!5sme+balto+-+Recherche+Google!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipPLd5qp49GeRegeQVn4k65QcVF0UBSl5YMCKVDY&hl=fr&sa=X&ved=2ahUKEwiRtump-5n9AhXEVaQEHdKxDzMQ7ZgBKAB6BAgUEAI"*/,
+        menu: {
+          entrees: ["entree 1", "entree 2"],
+          dishes: ["plat 1", "plat 2", "plat 3"],
+          deserts: ["desert 1", "desert 2"],
+        },
       },
-    },
     {
         id: 2,
         name: "Higuma",
@@ -44,21 +44,21 @@ export const restaurants = [
           deserts: ["desert 1", "desert 2"],
         },
       },
-    {
-      id: 3,
-      name: "Le Balto",
-      address: "15 Rue Mazarine, 75006 Paris",
-      description_short: "Brasserie parisienne",
-      description_long:
-        "Soupe à l'oignon, charcuterie et steaks servis dans une brasserie haut de gamme avec des salles décorées dans des styles différents.",
-      img: "/assets/le balto.png"
-      /*"https://www.google.com/maps/uv?pb=!1s0x47e671d8b9183cef:0x999004ac679e6812!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipPLd5qp49GeRegeQVn4k65QcVF0UBSl5YMCKVDY%3Dw520-h350-n-k-no!5sme+balto+-+Recherche+Google!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipPLd5qp49GeRegeQVn4k65QcVF0UBSl5YMCKVDY&hl=fr&sa=X&ved=2ahUKEwiRtump-5n9AhXEVaQEHdKxDzMQ7ZgBKAB6BAgUEAI"*/,
-      menu: {
-        entrees: ["entree 1", "entree 2"],
-        dishes: ["plat 1", "plat 2", "plat 3"],
-        deserts: ["desert 1", "desert 2"],
+      {
+        id: 3,
+        name: "Le Bain",
+        address: "75bis rue de l'eau, 29000 Quimper",
+        description_short: "Familial et végétarien",
+        description_long:
+          "Pour les amoureux des légumes et des produits de saison, Le Bain est un endroit idéal. Le tout dans un lieu agréable et cosy.",
+        img: "/assets/Le bain.jpg"
+        /*"https://www.google.com/url?sa=i&url=https%3A%2F%2Fvisitbath.co.uk%2Ffood-and-drink%2Frestaurants&psig=AOvVaw08Wfzs5hb3qcBWRgVTZNFu&ust=1676632167576000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJD28dfzmf0CFQAAAAAdAAAAABAJ"*/,
+        menu: {
+          entrees: ["entree 1", "entree 2"],
+          dishes: ["plat 1", "plat 2", "plat 3"],
+          deserts: ["desert 1", "desert 2"],
+        },
       },
-    },
     {
       id: 4,
       name: "Au Bascou",
