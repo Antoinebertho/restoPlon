@@ -13,14 +13,14 @@ const Banner: React.FC<BannerProps> = () => {
             </h1>
 
             <p className="mt-1.5 text-base text-gray-500">
-              Discover new places 📍
+              Découvir de nouveaux restaurants 📍
             </p>
           </div>
           <div>
             <button
               className="inline-block rounded bg-gray-900 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 hover:bg-indigo-500 "
             >
-              Favorites 💜
+              Favoris 💜
             </button>
           </div>
         </div>

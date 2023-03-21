@@ -9,9 +9,9 @@ export const restaurants = [
       img: "/assets/l'échappée.webp"
       /*"https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg-3.journaldesfemmes.fr%2FH20vVHBaJmY2sDsnU2QmOldtvNI%3D%2F1500x%2Fsmart%2Fe215672b6c2c4199accb23e4406c5967%2Fccmcms-jdf%2F32506409.jpg&imgrefurl=https%3A%2F%2Fcuisine.journaldesfemmes.fr%2Fchefs-et-gastronomie%2F2786813-le-top-10-des-meilleurs-restaurants-avec-vue-a-paris%2F&tbnid=klNLrfmN6L_JzM&vet=12ahUKEwiIoLTX85n9AhVzSKQEHcp1DigQMygGegUIARDpAQ..i&docid=2OHHy64Of6XPgM&w=1500&h=1000&q=restaurants&ved=2ahUKEwiIoLTX85n9AhVzSKQEHcp1DigQMygGegUIARDpAQ"*/,
       menu: {
-        entrees: ["entree 1", "entree 2"],
-        dishes: ["plat 1", "plat 2", "plat 3"],
-        deserts: ["desert 1", "desert 2"],
+        entrees: ["Terrine de foie gras de canard, gelée de Sauternes et chutney de figues", "Ceviche de Saint-Jacques, mangue et avocat"],
+        dishes: ["Filet de boeuf Rossini, pommes Pont-Neuf et sauce au vin rouge", "Dos de cabillaud rôti, risotto aux écrevisses et bisque de homard", "Suprême de pintade fermière, gratin de topinambours et jus truffé"],
+        deserts: ["Soufflé chaud au Grand Marnier, glace vanille Bourbon", "Tarte fine aux pommes, crème légère à la vanille"],
       },
     },
     {
@@ -24,9 +24,9 @@ export const restaurants = [
         img: "/assets/le balto.png"
         /*"https://www.google.com/maps/uv?pb=!1s0x47e671d8b9183cef:0x999004ac679e6812!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipPLd5qp49GeRegeQVn4k65QcVF0UBSl5YMCKVDY%3Dw520-h350-n-k-no!5sme+balto+-+Recherche+Google!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipPLd5qp49GeRegeQVn4k65QcVF0UBSl5YMCKVDY&hl=fr&sa=X&ved=2ahUKEwiRtump-5n9AhXEVaQEHdKxDzMQ7ZgBKAB6BAgUEAI"*/,
         menu: {
-          entrees: ["entree 1", "entree 2"],
-          dishes: ["plat 1", "plat 2", "plat 3"],
-          deserts: ["desert 1", "desert 2"],
+          entrees: ["Œufs mimosa à l'ancienne", "Salade de chèvre chaud sur lit de mesclun"],
+          dishes: ["Confit de canard et ses pommes de terre sarladaises", "Steak-frites, sauce béarnaise", "Tartare de boeuf coupé au couteau, pommes grenaille et salade verte"],
+          deserts: ["Tarte au citron meringuée", "Profiteroles au chocolat chaud"],
         },
       },
     {
@@ -39,9 +39,9 @@ export const restaurants = [
         img:  "/assets/higuma.png"
         /*"https://www.google.com/maps/uv?pb=!1s0x47e66e3acb056675:0xfe3f9961811e978c!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipOgTJjdnpMoYT6XXw1LbLRmfNZqmGqRPUsWYDtx%3Dw520-h350-n-k-no!5shiguma+paris+-+Recherche+Google!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipOgTJjdnpMoYT6XXw1LbLRmfNZqmGqRPUsWYDtx&hl=fr&sa=X&ved=2ahUKEwj34bLi-5n9AhV9TKQEHUP0DrgQ7ZgBKAB6BAgXEAI"*/,
         menu: {
-          entrees: ["entree 1", "entree 2"],
-          dishes: ["plat 1", "plat 2", "plat 3"],
-          deserts: ["desert 1", "desert 2"],
+          entrees: ["Gyoza, raviolis grillés à la viande et aux légumes", "Edamame, fèves de soja bouillies et salées"],
+          dishes: ["Ramen shoyu, soupe de nouilles au porc, sauce soja et légumes", "Tempura de crevettes et légumes, accompagné de riz", "Donburi de boeuf, bol de riz japonais garni de boeuf tranché, d'oignons et d'oeuf"],
+          deserts: ["Mochi glacé, boule de riz gluant fourrée de glace", "Dorayaki, pancake fourré à la pâte de haricot rouge"],
         },
       },
       {
@@ -54,9 +54,9 @@ export const restaurants = [
         img: "/assets/Le bain.jpg"
         /*"https://www.google.com/url?sa=i&url=https%3A%2F%2Fvisitbath.co.uk%2Ffood-and-drink%2Frestaurants&psig=AOvVaw08Wfzs5hb3qcBWRgVTZNFu&ust=1676632167576000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJD28dfzmf0CFQAAAAAdAAAAABAJ"*/,
         menu: {
-          entrees: ["entree 1", "entree 2"],
-          dishes: ["plat 1", "plat 2", "plat 3"],
-          deserts: ["desert 1", "desert 2"],
+          entrees: ["Soupe de lentilles corail et lait de coco, servie avec des croûtons de pain aux herbes", "Salade de roquette, avocat et tomates cerises, vinaigrette au citron vert et au miel"],
+          dishes: ["Burger végan, galette de haricots rouges, tomates séchées et sauce au pesto, servi avec des frites de patates douces", "Curry de légumes, lait de coco et épices, accompagné de riz basmati et de naan au fromage végétal", "Risotto aux champignons et aux épinards, garni de parmesan végétal"],
+          deserts: ["Tarte au citron végane, garnie de crème fouettée au coco", "Brownies végans, servis avec une boule de glace à la vanille de coco"],
         },
       },
     {
