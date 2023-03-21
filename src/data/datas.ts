@@ -69,9 +69,9 @@ export const restaurants = [
       img: "/assets/au bascout.png"
       /*"https://www.google.com/maps/uv?pb=!1s0x47e66e0544d1174f:0xf21ae3437e56ebb!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipOdlk8YKbDWmQDZIwkKagRpwDtEEmK_20FhP0mv%3Dw520-h350-n-k-no!5srestaurants+-+Recherche+Google!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipOdlk8YKbDWmQDZIwkKagRpwDtEEmK_20FhP0mv&hl=fr&sa=X&ved=2ahUKEwju0sPp-pn9AhUfTKQEHdBqApkQ7ZgBKAB6BAgHEAI"*/,
       menu: {
-        entrees: ["entree 1", "entree 2"],
-        dishes: ["plat 1", "plat 2", "plat 3"],
-        deserts: ["desert 1", "desert 2"],
+        entrees: ["Piquillos farcis à la morue et aux légumes", "Salade de tomates, poivrons et oignons rouges, assaisonnée d'une vinaigrette à l'ail et au piment d'Espelette"],
+        dishes: ["Axoa de veau, un ragoût de veau haché et de piments doux, servi avec du riz basmati", "Merlu koskera, un plat de poisson avec une sauce à base d'amandes, de vin blanc et de poivrons", "Piperade, un plat de légumes avec des poivrons, des oignons et des tomates, servi avec du jambon de Bayonne et des œufs brouillés"],
+        deserts: ["Gâteau basque à la confiture de cerises noires, une tartelette à la pâte sablée et à la garniture de confiture de cerises noires", "Crème brûlée au piment d'Espelette, une crème anglaise aromatisée au piment d'Espelette et caramélisée au sucre roux"],
       },
     },
     {
@@ -84,9 +84,9 @@ export const restaurants = [
       img: "/assets/le bastringue.png"
       /*"https://www.google.com/maps/uv?pb=!1s0x47e66dd0e3eb82df:0x9067c10bed8a820b!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipOTX7AS7zZ5qVJWERvy8rru_MA22MXDv5pTAcpE%3Dw520-h350-n-k-no!5sle+bastringue+paris+19+-+Recherche+Google!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipOTX7AS7zZ5qVJWERvy8rru_MA22MXDv5pTAcpE&hl=fr&sa=X&ved=2ahUKEwj6gK_J-5n9AhX9TKQEHXkjBxkQ7ZgBKAB6BAgSEAI"*/,
       menu: {
-        entrees: ["entree 1", "entree 2"],
-        dishes: ["plat 1", "plat 2", "plat 3"],
-        deserts: ["desert 1", "desert 2"],
+        entrees: ["Escargots de Bourgogne, des escargots cuits au beurre à l'ail et aux herbes, servis dans leur coquille", "Terrine de campagne, une terrine de viande de porc et de foie, servie avec des cornichons et de la moutarde"],
+        dishes: ["Coq au vin, un plat de poulet mijoté dans du vin rouge avec des champignons, des oignons et du lard, servi avec des pommes de terre et des carottes glacées", "Steak-frites, un steak de bœuf grillé servi avec des frites croustillantes et une sauce au poivre ou au Roquefort", "Ratatouille provençale, un plat végétarien de légumes d'été mijotés ensemble, tels que des courgettes, des aubergines, des poivrons, des tomates et des oignons, servi avec du riz ou du pain"],
+        deserts: ["Crème brûlée à la vanille, une crème anglaise parfumée à la vanille et caramélisée au sucre roux", "Tarte Tatin, une tarte aux pommes renversée, avec des pommes caramélisées et une pâte feuilletée croustillante"],
       },
     },
     {
@@ -100,9 +100,9 @@ export const restaurants = [
         img: "/assets/Les filets bleue.png"
         /*"https://www.google.com/maps/uv?pb=!1s0x4813d46038dbc27d:0x41469dae0cd46ea8!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipPWYcBjbpnej2FQoHGYsqQmCY1NOA7v5n-0L49z%3Dw520-h350-n-k-no!5sfilets+bleus+-+Recherche+Google!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipPWYcBjbpnej2FQoHGYsqQmCY1NOA7v5n-0L49z&hl=fr&sa=X&ved=2ahUKEwjtvb3--pn9AhX2WqQEHVWjAi4Q7ZgBKAB6BAgQEAI"*/,
         menu: {
-          entrees: ["entree 1", "entree 2"],
-          dishes: ["plat 1", "plat 2", "plat 3"],
-          deserts: ["desert 1", "desert 2"],
+          entrees: ["Soupe de poissons, une soupe de poisson riche et savoureuse, garnie de croûtons et de rouille", "Tartare de saumon, du saumon frais coupé en petits dés, mélangé avec des herbes, de l'échalote et de l'huile d'olive, servi avec des toasts de pain grillé"],
+          dishes: ["Filet de dorade grillé avec une sauce au citron et aux herbes fraîches accompagné de riz basmati et de légumes grillés.", "Poisson du jour cuit en papillote avec des légumes de saison et une sauce à l'ail et au beurre.", "Pavé de saumon grillé avec une sauce hollandaise, servi avec des pommes de terre sautées et des légumes verts vapeur."],
+          deserts: ["Carpaccio d'ananas frais avec une sauce au rhum et aux épices douces, garni de feuilles de menthe et de noix de coco râpée.", "Crumble de fruits rouges avec une crème anglaise à la vanille et une boule de glace à la fraise."],
         },
       },
   ];

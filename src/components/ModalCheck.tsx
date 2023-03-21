@@ -44,19 +44,19 @@ const ModalCheck: React.FC<ModalCheckProps> = ({ onClose, restaurant }) => {
             <p className="mt-1 text-md text-gray-300 ">
               {restaurant.description_long}
             </p>
-            <p className="mt-1 text-md font-extrabold text-center text-gray-300 ">
+            <p className="mt-1 text-md font-extrabold text-center text-gray-300 underline ">
               Entrées
             </p>
             <p className="mt-1 text-md font-semibold text-center  text-gray-300 ">
               {restaurant.menu.entrees.join(", ")}
             </p>
-            <p className="mt-1 text-md font-extrabold text-center text-gray-300 ">
+            <p className="mt-1 text-md font-extrabold text-center text-gray-300 underline ">
               Plats
             </p>
             <p className="mt-1 text-md font-semibold text-center text-gray-300 ">
               {restaurant.menu.dishes.join(", ")}
             </p>
-            <p className="mt-1 text-md font-extrabold text-center text-gray-300 ">
+            <p className="mt-1 text-md font-extrabold text-center text-gray-300 underline ">
               Desserts
             </p>
             <p className="mt-1 text-md font-semibold text-center text-gray-300 ">
