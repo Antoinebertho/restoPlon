@@ -3,9 +3,7 @@ import "tailwindcss/tailwind.css";
 import { restaurants } from "../data/datas";
 import ModalCheck from "./ModalCheck";
 
-interface SectionProps {}
-
-const Section: React.FC<SectionProps> = () => {
+const Section = () => {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [selectedRestaurant, setSelectedRestaurant] = React.useState({
     name: "",

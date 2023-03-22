@@ -1,22 +1,7 @@
 import React from "react";
+import { ModalCheckProps } from "../interfaces/ModalCheck.interface";
 
-interface ModalCheckProps {
-  onClose: () => void;
-  restaurant: {
-    name: string;
-    img: string;
-    address: string;
-    description_long: string;
-    menu: {
-      entrees: string[];
-      dishes: string[];
-      deserts: string[];
-    };
-    description_short: string;
-  };
-}
-
-const ModalCheck: React.FC<ModalCheckProps> = ({ onClose, restaurant }) => {
+const ModalCheck: React.FC<ModalCheckProps> = ({ onClose , restaurant}) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none --tw-translate-x: (-50%, -50%)">
       <div className="relative w-auto max-w-3xl mx-auto my-6">
@@ -48,19 +33,19 @@ const ModalCheck: React.FC<ModalCheckProps> = ({ onClose, restaurant }) => {
               Entrées
             </p>
             <p className="mt-1 text-md font-semibold text-center  text-gray-300 ">
-              {restaurant.menu.entrees.join(", ")}
+              {restaurant.menu.entrees.join(" ou ")}
             </p>
             <p className="mt-1 text-md font-extrabold text-center text-gray-300 underline ">
               Plats
             </p>
             <p className="mt-1 text-md font-semibold text-center text-gray-300 ">
-              {restaurant.menu.dishes.join(", ")}
+              {restaurant.menu.dishes.join(" ou ")}
             </p>
             <p className="mt-1 text-md font-extrabold text-center text-gray-300 underline ">
               Desserts
             </p>
             <p className="mt-1 text-md font-semibold text-center text-gray-300 ">
-              {restaurant.menu.deserts.join(", ")}
+              {restaurant.menu.deserts.join(" ou ")}
             </p>
             <p className="mt-1 text-sx italic py-3 text-gray-300 ">
               {restaurant.description_short}

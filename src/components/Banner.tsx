@@ -1,8 +1,7 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
 
-interface BannerProps {}
-const Banner: React.FC<BannerProps> = () => {
+const Banner = () => {
   return (
     <header aria-label="Page Header" className="bg-gray-100">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8">

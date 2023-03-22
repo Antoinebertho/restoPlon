@@ -1,8 +1,8 @@
 import React from 'react';
-// import { useState, useEffect } from 'react'
 import Banner from './Banner';
 import Footer from './Footer';
 import Section from './Section';
+// import { useState, useEffect } from 'react'
 
 
 function App() {

@@ -1,8 +1,7 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
 
-interface FooterProps {}
-const Footer: React.FC<FooterProps> = () => {
+const Footer = () => {
   return (
     <footer aria-label="Site Footer" className="bg-gray-100">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
