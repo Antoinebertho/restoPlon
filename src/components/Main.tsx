@@ -1,24 +1,16 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "tailwindcss/tailwind.css";
-import { restaurants } from "../data/datas";
-import ModalCheck from "./ModalCheck";
+import ModalCheck from "./ModalSee";
+import { restaurantType } from "../models/restaurantType";
+import { RestaurantContext } from "../context/restaurantContext";
 
-const Section = () => {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-  const [selectedRestaurant, setSelectedRestaurant] = React.useState({
-    name: "",
-    img: "",
-    address: "",
-    description_long: "",
-    menu: {
-      entrees: ["", ""],
-      dishes: ["", "", ""],
-      deserts: ["", ""],
-    },
-    description_short: "",
-  });
+const Main = () => {
+  const { restaurants } = useContext(RestaurantContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedRestaurant, setSelectedRestaurant] =
+    useState<restaurantType | null>(null);
 
-  const handleCheckClick = (restaurant: typeof restaurants[number]) => {
+  const handleCheckClick = (restaurant: restaurantType) => {
     setSelectedRestaurant(restaurant);
     setIsModalOpen(true);
   };
@@ -64,7 +56,7 @@ const Section = () => {
             </div>
           ))}
         </div>
-        {isModalOpen && (
+        {isModalOpen && selectedRestaurant != null && (
           <ModalCheck
             onClose={() => setIsModalOpen(false)}
             restaurant={selectedRestaurant}
@@ -75,4 +67,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Main;

@@ -12,7 +12,7 @@ const Banner = () => {
             </h1>
 
             <p className="mt-1.5 text-base text-gray-500">
-              Découvir de nouveaux restaurants 📍
+              Découvir de nouveaux restaurants autours de vous📍
             </p>
           </div>
           <div>
