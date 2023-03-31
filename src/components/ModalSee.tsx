@@ -11,14 +11,6 @@ const ModalCheck = ({ onClose, restaurant }: ModalCheckProps) => {
         <div className="relative flex flex-col w-full bg-gray-800 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
           <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
             <h3 className="text-3xl font-semibold">{restaurant.name}</h3>
-            {/* <button
-              className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-              onClick={onClose}
-            >
-              <span className="bg-transparent text-black opacity-5 h-6 w-6 text-xl block outline-none focus:outline-none">
-                x
-              </span>
-            </button> */}
           </div>
           <div className="relative p-6 flex-auto">
             <img
@@ -55,7 +47,7 @@ const ModalCheck = ({ onClose, restaurant }: ModalCheckProps) => {
                 {restaurant.description_short}
               </p>
               <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700">
-                ♥️
+                Ajouter
               </button>
             </div>
           </div>

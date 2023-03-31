@@ -7,11 +7,6 @@ import { restaurantsData } from "./data/restaurantsDatas";
 // import { useState, useEffect } from 'react'
 
 function App() {
-  // const savedFav = localStorage.getItem('fav')
-  // const [fav, updateFav] = useState(savedFav ? JSON.parse(savedFav) : [])
-  // useEffect(() => {
-  // 	localStorage.setItem('fav', JSON.stringify(fav))
-  // }, [fav])
   return (
     <div className="App">
       <Banner />
