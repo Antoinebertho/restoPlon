@@ -11,6 +11,12 @@ const ModalCheck = ({ onClose, restaurant }: ModalCheckProps) => {
         <div className="relative flex flex-col w-full bg-gray-800 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
           <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
             <h3 className="text-3xl font-semibold">{restaurant.name}</h3>
+            <button
+              className="p-1 ml-auto bg-transparent border-0 text-white opacity-2 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+              onClick={onClose}
+            >
+                x
+            </button>
           </div>
           <div className="relative p-6 flex-auto">
             <img
@@ -46,7 +52,7 @@ const ModalCheck = ({ onClose, restaurant }: ModalCheckProps) => {
               <p className="mt-1 text-sx italic py-3 text-gray-300 ">
                 {restaurant.description_short}
               </p>
-              <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700">
+              <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700" onClick={()=>console.log("Hello")}>
                 Ajouter
               </button>
             </div>
@@ -54,7 +60,6 @@ const ModalCheck = ({ onClose, restaurant }: ModalCheckProps) => {
         </div>
       </div>
       <div
-        className="fixed inset-0 z-40 bg-black opacity-10"
         onClick={onClose}
       ></div>
     </div>

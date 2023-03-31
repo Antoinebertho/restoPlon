@@ -3,6 +3,7 @@ import "tailwindcss/tailwind.css";
 import ModalCheck from "./ModalSee";
 import { restaurantType } from "../models/restaurantType";
 import { RestaurantContext } from "../context/restaurantContext";
+import { FavoritesContext } from "../context/favoritesContext";
 
 const Main = () => {
   const { restaurants } = useContext(RestaurantContext);
@@ -14,6 +15,8 @@ const Main = () => {
     setSelectedRestaurant(restaurant);
     setIsModalOpen(true);
   };
+
+//   const {addFavorite, favorites} = useContext(FavoritesContext);
 
   return (
     <section className="bg-gray-900 text-white">
@@ -49,7 +52,7 @@ const Main = () => {
                   Voir +
                 </button>
                 <> </>
-                <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700">
+                <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700" onClick={() => addFavorite(restaurant)}> 
                   Ajouter
                 </button>
               </div>
