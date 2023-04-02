@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useContext }  from "react";
 import { restaurantType } from "../models/restaurantType";
+import { FavoritesContext } from "../context/FavoritesContext";
 
 type ModalCheckProps = { onClose: () => void; restaurant: restaurantType };
 
 const ModalSee = ({ onClose, restaurant }: ModalCheckProps) => {
+
+    const { favorites, addFavorite, removeFavorite } =
+    useContext(FavoritesContext);
+
+    const isFavorite = (restaurantId: number) => {
+    return favorites.includes(restaurantId);
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none --tw-translate-x: (-50%, -50%)">
@@ -52,9 +60,22 @@ const ModalSee = ({ onClose, restaurant }: ModalCheckProps) => {
               <p className="mt-1 text-sx italic py-3 text-gray-300 ">
                 {restaurant.description_short}
               </p>
-              <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700">
-                Ajouter
-              </button>
+              <> </>
+                {isFavorite(restaurant.id) ? (
+                  <button
+                    className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700"
+                    onClick={() => removeFavorite(restaurant.id)}
+                  >
+                    Retirer
+                  </button>
+                ) : (
+                  <button
+                    className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700"
+                    onClick={() => addFavorite(restaurant.id)}
+                  >
+                    Ajouter
+                  </button>
+                )}
             </div>
           </div>
         </div>
