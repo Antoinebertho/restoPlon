@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "tailwindcss/tailwind.css";
-import ModalSee from "./ModalSee";
+import ModalDiscover from "./ModalDiscover";
 import { restaurantType } from "../models/restaurantType";
 import { RestaurantContext } from "../context/RestaurantContext";
 import { FavoritesContext } from "../context/FavoritesContext";
@@ -55,7 +55,7 @@ const FavoritesPage = () => {
               </p>
               <div className="mt-12 text-center">
                 <button
-                  className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-900 focus:ring-yellow-400 hover:bg-pink-700 mr-6"
+                  className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 focus:ring-yellow-400 hover:bg-indigo-500 mr-6"
                   onClick={() => handleCheckClick(restaurant)}
                 >
                   Découvrir
@@ -63,14 +63,14 @@ const FavoritesPage = () => {
                 <> </>
                 {isFavorite(restaurant.id) ? (
                   <button
-                    className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700"
+                    className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 focus:ring-yellow-400 hover:bg-indigo-500"
                     onClick={() => removeFavorite(restaurant.id)}
                   >
                     Retirer
                   </button>
                 ) : (
                   <button
-                    className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700"
+                    className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 focus:ring-yellow-400 hover:bg-indigo-500"
                     onClick={() => addFavorite(restaurant.id)}
                   >
                     Ajouter
@@ -81,7 +81,7 @@ const FavoritesPage = () => {
           ))}
         </div>
         {isModalOpen && selectedRestaurant != null && (
-          <ModalSee
+          <ModalDiscover
             onClose={() => setIsModalOpen(false)}
             restaurant={selectedRestaurant}
           />

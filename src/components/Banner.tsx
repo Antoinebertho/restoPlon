@@ -22,10 +22,10 @@ const Banner = () => {
           <div>
             <Link to={"/FavoritesPage"}>
               <button
-                className="inline-block rounded bg-gray-900 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 hover:bg-indigo-500 "
+                className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 hover:bg-indigo-500 focus:ring-yellow-400"
                 onClick={handleFavoritesClick}
               >
-                Favoris 💜
+                Favoris
               </button>
             </Link>
           </div>
