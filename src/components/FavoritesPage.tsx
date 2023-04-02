@@ -1,8 +1,8 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import "tailwindcss/tailwind.css";
 import ModalDiscover from "./ModalDiscover";
 import { restaurantType } from "../models/restaurantType";
-import { RestaurantContext } from "../context/RestaurantContext";
+import { RestaurantContext } from "../context/restaurantContext";
 import { FavoritesContext } from "../context/FavoritesContext";
 
 const FavoritesPage = () => {

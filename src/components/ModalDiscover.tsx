@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { restaurantType } from "../models/restaurantType";
 import { FavoritesContext } from "../context/FavoritesContext";
 

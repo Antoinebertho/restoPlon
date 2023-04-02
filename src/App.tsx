@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Main from "./components/MainPage";
-import { RestaurantContext } from "./context/RestaurantContext";
+import { RestaurantContext } from "./context/restaurantContext";
 import { restaurantsData } from "./data/restaurantsDatas";
 import { FavoritesProvider } from "./context/FavoritesContext";
 import FavoritesPage from "./components/FavoritesPage";
