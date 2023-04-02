@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "tailwindcss/tailwind.css";
-import ModalCheck from "./ModalSee";
+import ModalSee from "./ModalSee";
 import { restaurantType } from "../models/restaurantType";
 import { RestaurantContext } from "../context/RestaurantContext";
 import { FavoritesContext } from "../context/FavoritesContext";
@@ -81,7 +81,7 @@ const FavoritesPage = () => {
           ))}
         </div>
         {isModalOpen && selectedRestaurant != null && (
-          <ModalCheck
+          <ModalSee
             onClose={() => setIsModalOpen(false)}
             restaurant={selectedRestaurant}
           />
