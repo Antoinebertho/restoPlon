@@ -1,15 +1,14 @@
-import React, { useContext }  from "react";
+import React, { useContext } from "react";
 import { restaurantType } from "../models/restaurantType";
 import { FavoritesContext } from "../context/FavoritesContext";
 
 type ModalSeeProps = { onClose: () => void; restaurant: restaurantType };
 
 const ModalSee = ({ onClose, restaurant }: ModalSeeProps) => {
-
-    const { favorites, addFavorite, removeFavorite } =
+  const { favorites, addFavorite, removeFavorite } =
     useContext(FavoritesContext);
 
-    const isFavorite = (restaurantId: number) => {
+  const isFavorite = (restaurantId: number) => {
     return favorites.includes(restaurantId);
   };
 
@@ -23,7 +22,7 @@ const ModalSee = ({ onClose, restaurant }: ModalSeeProps) => {
               className="p-1 ml-auto bg-transparent border-0 text-white opacity-2 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
               onClick={onClose}
             >
-                x
+              x
             </button>
           </div>
           <div className="relative p-6 flex-auto">
@@ -61,28 +60,26 @@ const ModalSee = ({ onClose, restaurant }: ModalSeeProps) => {
                 {restaurant.description_short}
               </p>
               <> </>
-                {isFavorite(restaurant.id) ? (
-                  <button
-                    className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700"
-                    onClick={() => removeFavorite(restaurant.id)}
-                  >
-                    Retirer
-                  </button>
-                ) : (
-                  <button
-                    className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700"
-                    onClick={() => addFavorite(restaurant.id)}
-                  >
-                    Ajouter
-                  </button>
-                )}
+              {isFavorite(restaurant.id) ? (
+                <button
+                  className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700"
+                  onClick={() => removeFavorite(restaurant.id)}
+                >
+                  Retirer
+                </button>
+              ) : (
+                <button
+                  className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700"
+                  onClick={() => addFavorite(restaurant.id)}
+                >
+                  Ajouter
+                </button>
+              )}
             </div>
           </div>
         </div>
       </div>
-      <div
-        onClick={onClose}
-      ></div>
+      <div onClick={onClose}></div>
     </div>
   );
 };

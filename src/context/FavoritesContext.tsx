@@ -1,7 +1,7 @@
-import React, { createContext, useState, useEffect} from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 export type FavoritesContextType = {
-  favorites: number[] ;
+  favorites: number[];
   addFavorite: (restaurantId: number) => void;
   removeFavorite: (restaurantId: number) => void;
 };
@@ -10,9 +10,13 @@ export const FavoritesContext = createContext<FavoritesContextType>({
   favorites: [],
   addFavorite: () => undefined,
   removeFavorite: () => undefined,
-})
+});
 
-export  const FavoritesProvider = ({children}: {children: React.ReactNode}): JSX.Element => {
+export const FavoritesProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}): JSX.Element => {
   const [favorites, setFavorites] = useState<number[]>([]);
 
   useEffect(() => {
@@ -24,23 +28,27 @@ export  const FavoritesProvider = ({children}: {children: React.ReactNode}): JSX
 
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
-  } , [favorites]);
+  }, [favorites]);
 
   const addFavorite = (restaurantId: number) => {
-      setFavorites((prevFavorites) => 
-          prevFavorites.includes(restaurantId) ? prevFavorites : [...prevFavorites, restaurantId]
-      )
-  }
+    setFavorites((prevFavorites) =>
+      prevFavorites.includes(restaurantId)
+        ? prevFavorites
+        : [...prevFavorites, restaurantId]
+    );
+  };
 
   const removeFavorite = (restaurantId: number) => {
-      setFavorites((prevFavorites) => 
-          prevFavorites.filter((id) => id !== restaurantId)
-      )
-  }
+    setFavorites((prevFavorites) =>
+      prevFavorites.filter((id) => id !== restaurantId)
+    );
+  };
 
   return (
-    <FavoritesContext.Provider value={{favorites, addFavorite, removeFavorite}}> 
-    {children} 
+    <FavoritesContext.Provider
+      value={{ favorites, addFavorite, removeFavorite }}
+    >
+      {children}
     </FavoritesContext.Provider>
   );
-}
+};

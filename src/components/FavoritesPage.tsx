@@ -5,7 +5,6 @@ import { restaurantType } from "../models/restaurantType";
 import { RestaurantContext } from "../context/RestaurantContext";
 import { FavoritesContext } from "../context/FavoritesContext";
 
-
 const FavoritesPage = () => {
   const { restaurants } = useContext(RestaurantContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,8 +23,9 @@ const FavoritesPage = () => {
     return favorites.includes(restaurantId);
   };
 
-  const favoriteRestaurants = restaurants.filter((restaurant)=>
-    isFavorite(restaurant.id))
+  const favoriteRestaurants = restaurants.filter((restaurant) =>
+    isFavorite(restaurant.id)
+  );
 
   return (
     <section className="bg-gray-900 text-white">
