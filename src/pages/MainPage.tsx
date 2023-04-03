@@ -1,5 +1,5 @@
 import "tailwindcss/tailwind.css";
-import Card from "./Card";
+import Card from "../components/Card";
 
 const MainPage = () => {
   return (
