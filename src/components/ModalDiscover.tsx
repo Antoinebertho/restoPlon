@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { restaurantType } from "../models/restaurantType";
 import { FavoritesContext } from "../context/FavoritesContext";
 
-type ModalSeeProps = { onClose: () => void; restaurant: restaurantType };
+type ModalDiscoverProps = { onClose: () => void; restaurant: restaurantType };
 
-const ModalDiscover = ({ onClose, restaurant }: ModalSeeProps) => {
+const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
   const { favorites, addFavorite, removeFavorite } =
     useContext(FavoritesContext);
 
