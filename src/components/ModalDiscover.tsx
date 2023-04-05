@@ -1,15 +1,34 @@
-import { useContext } from "react";
+import { useContext, useRef, useState } from "react";
 import { restaurantType } from "../models/restaurantType";
 import { FavoritesContext } from "../context/FavoritesContext";
+import ModalRemove from "./ModalRemove";
 
 type ModalDiscoverProps = { onClose: () => void; restaurant: restaurantType };
 
 const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
   const { favorites, addFavorite, removeFavorite } =
     useContext(FavoritesContext);
+    const [showModal, setShowModal] = useState(false);
 
   const isFavorite = (restaurantId: number) => {
     return favorites.includes(restaurantId);
+  };
+
+  const idRef = useRef(0)
+
+  const handleDeleteClick = (id: number) => {
+    idRef.current= id
+    console.log(idRef);
+    
+    setShowModal(true);
+  };
+
+  const handleYesClick = () => {
+    setShowModal(false);
+  };
+
+  const handleNoClick = () => {
+    setShowModal(false);
   };
 
   return (
@@ -63,7 +82,7 @@ const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
               {isFavorite(restaurant.id) ? (
                 <button
                   className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 focus:ring-yellow-400 hover:bg-indigo-500"
-                  onClick={() => removeFavorite(restaurant.id)}
+                  onClick={() => handleDeleteClick(restaurant.id)}
                 >
                   Retirer
                 </button>
@@ -75,12 +94,21 @@ const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
                   Ajouter
                 </button>
               )}
+              {showModal  && (
+        <ModalRemove
+          isOpen={showModal}
+          onYes={handleYesClick}
+          onClose={handleNoClick}
+          idRef={idRef.current}
+        />
+      )}
             </div>
           </div>
         </div>
       </div>
       <div onClick={onClose}></div>
     </div>
+    
   );
 };
 
