@@ -42,6 +42,7 @@ export const FavoritesProvider = ({
     setFavorites((prevFavorites) =>
       prevFavorites.filter((id) => id !== restaurantId)
     );
+    
   };
 
   return (

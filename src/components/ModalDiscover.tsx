@@ -13,7 +13,7 @@ const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none --tw-translate-x: (-50%, -50%) overflow-y: auto; max-height: 680px">
+    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none --tw-translate-x: (-50%, -50%)">
       <div className="relative w-auto max-w-3xl mx-auto my-6">
         <div className="relative flex flex-col w-full bg-gray-800 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
           <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">

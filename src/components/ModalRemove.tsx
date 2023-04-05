@@ -1,32 +1,55 @@
-import { restaurantType } from "../models/restaurantType";
-import "tailwindcss/tailwind.css";
+import { useContext } from "react";
+import { FavoritesContext } from "../context/FavoritesContext";
 
-type ModalRemoveProps = { restaurant: restaurantType };
+interface ModalRemoveProps {
+  isOpen: boolean;
+  onYes: () => void;
+  onClose: () => void;
+  idRef: number
+}
 
-const ModalRemove = ({ restaurant }: ModalRemoveProps) => {
-  return (
+const ModalRemove: React.FC<ModalRemoveProps> = ({
+  isOpen,
+  onYes,
+  onClose,
+  idRef,
+
+}:ModalRemoveProps ) => {
+
+    const { removeFavorite } =
+    useContext(FavoritesContext);
+
+  return isOpen ? (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none --tw-translate-x: (-50%, -50%)">
       <div className="relative w-auto max-w-3xl mx-auto my-6">
         <div className="relative flex flex-col w-full bg-gray-800 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
+        <button
+              className="p-1 ml-auto bg-transparent border-0 text-white opacity-2 float-right text-3xl leading-none font-semibold outline-none focus:outline-none pr-5"
+              onClick={onClose}
+            >
+              x
+            </button>
           <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
-            <h3 className="text-3xl font-semibold">
-              Êtes-vous sûr de vouloir retirer {restaurant.name} de vos favoris
-              ?
-            </h3>
-          </div>
-          <div className="flex items-center justify-center p-6">
-            <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition transform hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700">
-              non
-            </button>
-            <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition transform hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700">
-              oui
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="fixed inset-0 bg-black opacity-25"></div>
-    </div>
-  );
+            
+          <h3 className="text-3xl font-semibold">
+               Êtes-vous sûr de vouloir retirer ce restaurant de vos favoris
+               ?
+             </h3>
+             
+           </div>
+           <div className="flex items-center justify-center p-6">
+            <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition transform hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700 mr-6" onClick={onYes}>
+               non
+             </button>
+             <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition transform hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700" onClick={() => removeFavorite(idRef)}>
+               oui
+             </button>
+           </div>
+         </div>
+       </div>
+       <div onClick={onClose}></div>
+     </div>
+  ) : null;
 };
 
 export default ModalRemove;
