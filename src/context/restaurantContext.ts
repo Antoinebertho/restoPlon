@@ -8,3 +8,5 @@ export type RestaurantContextType = {
 export const RestaurantContext = createContext<RestaurantContextType>({
   restaurants: []
 });
+
+//const {restaurants}= useContext(RestaurantContext)

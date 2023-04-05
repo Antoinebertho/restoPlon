@@ -79,7 +79,7 @@ export const restaurantsData = [
       img: "/assets/le bastringue.png",
       menu: {
         entrees: ["Escargots de Bourgogne, des escargots cuits au beurre à l'ail et aux herbes, servis dans leur coquille", "Terrine de campagne, une terrine de viande de porc et de foie, servie avec des cornichons et de la moutarde"],
-        dishes: ["Coq au vin, un plat de poulet mijoté dans du vin rouge avec des champignons, des oignons et du lard, servi avec des pommes de terre et des carottes glacées", "Steak-frites, un steak de bœuf grillé servi avec des frites croustillantes et une sauce au poivre ou au Roquefort", "Ratatouille provençale, un plat végétarien de légumes d'été mijotés ensemble, tels que des courgettes, des aubergines, des poivrons, des tomates et des oignons, servi avec du riz ou du pain"],
+        dishes: ["Steak-frites, un steak de bœuf grillé servi avec des frites croustillantes et une sauce au poivre ou au Roquefort", "Ratatouille provençale, un plat végétarien de légumes d'été mijotés ensemble, tels que des courgettes, des aubergines, des poivrons, des tomates et des oignons, servi avec du riz ou du pain"],
         deserts: ["Crème brûlée à la vanille, une crème anglaise parfumée à la vanille et caramélisée au sucre roux", "Tarte Tatin, une tarte aux pommes renversée, avec des pommes caramélisées et une pâte feuilletée croustillante"],
       },
     },

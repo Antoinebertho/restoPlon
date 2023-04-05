@@ -22,7 +22,7 @@ const ModalRemove: React.FC<ModalRemoveProps> = ({
   return isOpen ? (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none --tw-translate-x: (-50%, -50%)">
       <div className="relative w-auto max-w-3xl mx-auto my-6">
-        <div className="relative flex flex-col w-full bg-gray-800 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
+        <div className="relative flex flex-col w-full bg-gray-700 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
         <button
               className="p-1 ml-auto bg-transparent border-0 text-white opacity-2 float-right text-3xl leading-none font-semibold outline-none focus:outline-none pr-5"
               onClick={onClose}
