@@ -13,7 +13,7 @@ const FavoritesPage = () => {
   const [selectedRestaurant, setSelectedRestaurant] =
     useState<restaurantType | null>(null);
 
-  const { favorites, addFavorite, removeFavorite } =
+  const { favorites, addFavorite} =
     useContext(FavoritesContext);
 
   const handleCheckClick = (restaurant: restaurantType) => {

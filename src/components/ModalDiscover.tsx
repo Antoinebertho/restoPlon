@@ -6,7 +6,7 @@ import ModalRemove from "./ModalRemove";
 type ModalDiscoverProps = { onClose: () => void; restaurant: restaurantType };
 
 const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
-  const { favorites, addFavorite, removeFavorite } =
+  const { favorites, addFavorite} =
     useContext(FavoritesContext);
     const [showModal, setShowModal] = useState(false);
 
