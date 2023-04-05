@@ -31,17 +31,17 @@ const ModalRemove: React.FC<ModalRemoveProps> = ({
             </button>
           <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
             
-          <h3 className="text-3xl font-semibold">
+          <h3 className="text-2xl font-semibold">
                Êtes-vous sûr de vouloir retirer ce restaurant de vos favoris
                ?
              </h3>
              
            </div>
            <div className="flex items-center justify-center p-6">
-            <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition transform hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700 mr-6" onClick={onYes}>
+            <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition transform hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 focus:ring-yellow-400 hover:bg-indigo-500 mr-6" onClick={onYes}>
                non
              </button>
-             <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition transform hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-pink-500 focus:ring-yellow-400 hover:bg-pink-700" onClick={() => removeFavorite(idRef)}>
+             <button className="inline-block rounded bg-pink-600 px-8 py-3 text-sm font-medium text-white transition transform hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500 focus:ring-yellow-400 hover:bg-indigo-500" onClick={() => removeFavorite(idRef)}>
                oui
              </button>
            </div>
