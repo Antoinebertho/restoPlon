@@ -108,7 +108,6 @@ const FavoritesPage = () => {
         {showModal  && (
         <ModalRemove
           isOpen={showModal}
-          onYes={handleYesClick}
           onClose={handleNoClick}
           idRef={idRef.current}
         />

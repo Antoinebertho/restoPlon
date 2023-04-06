@@ -12,19 +12,16 @@ export const FavoritesContext = createContext<FavoritesContextType>({
   removeFavorite: () => undefined,
 });
 
+const savedFavorites = localStorage.getItem("favorites");
+const parsedFavorites =
+  savedFavorites != null ? JSON.parse(savedFavorites) : [];
+
 export const FavoritesProvider = ({
   children,
 }: {
   children: React.ReactNode;
 }): JSX.Element => {
-  const [favorites, setFavorites] = useState<number[]>([]);
-
-  useEffect(() => {
-    const savedFavorites = localStorage.getItem("favorites");
-    if (savedFavorites) {
-      setFavorites(JSON.parse(savedFavorites));
-    }
-  }, []);
+  const [favorites, setFavorites] = useState<number[]>(parsedFavorites);
 
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
@@ -42,7 +39,6 @@ export const FavoritesProvider = ({
     setFavorites((prevFavorites) =>
       prevFavorites.filter((id) => id !== restaurantId)
     );
-    
   };
 
   return (
