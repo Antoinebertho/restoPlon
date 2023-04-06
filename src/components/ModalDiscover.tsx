@@ -97,7 +97,6 @@ const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
               {showModal  && (
         <ModalRemove
           isOpen={showModal}
-          onYes={handleYesClick}
           onClose={handleNoClick}
           idRef={idRef.current}
         />
