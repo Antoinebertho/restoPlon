@@ -19,7 +19,7 @@ const ModalRemove: React.FC<ModalRemoveProps> = ({
       <div className="relative w-auto max-w-3xl mx-auto my-6">
         <div className="relative flex flex-col w-full bg-gray-700 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
           <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
-            <h3 className="text-2xl font-semibold">
+            <h3 className="text-2xl font-semibold text-center">
               Êtes-vous sûr de vouloir retirer ce restaurant de vos favoris ?
             </h3>
           </div>
