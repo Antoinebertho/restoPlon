@@ -55,19 +55,19 @@ const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
               Entrées
             </p>
             <p className="mt-1 text-md font-semibold text-center  pb-3 text-gray-300 ">
-              {restaurant.menu.entrees.join(" et/ou ")}
+              {restaurant.menu.entrees.join(" ou ")}
             </p>
             <p className="mt-1 text-md font-extrabold text-center text-gray-300 underline ">
               Plats
             </p>
             <p className="mt-1 text-md font-semibold text-center pb-3 text-gray-300 ">
-              {restaurant.menu.dishes.join(" et/ou ")}
+              {restaurant.menu.dishes.join(" ou ")}
             </p>
             <p className="mt-1 text-md font-extrabold text-center  text-gray-300 underline ">
               Desserts
             </p>
             <p className="mt-1 text-md font-semibold text-center   text-gray-300 ">
-              {restaurant.menu.deserts.join(" et/ou ")}
+              {restaurant.menu.deserts.join(" ou ")}
             </p>
             <div className="sm:flex sm:items-center sm:justify-between pt-2">
               <p className="mt-1 text-sx italic py-3 text-gray-300 ">
