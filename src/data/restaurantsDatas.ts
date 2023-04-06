@@ -51,7 +51,7 @@ export const restaurantsData = [
         img: "/assets/Le bain.jpg",
         menu: {
           entrees: ["Soupe de lentilles corail et lait de coco servie avec des croûtons de pain aux herbes", "Salade de roquette avec avocat et tomates cerises servie avec vinaigrette au citron vert et au miel"],
-          dishes: ["Burger végan, galette de haricots rouges, tomates séchées et sauce au pesto, servi avec des frites de patates douces", "Curry de légumes au lait de coco et épices accompagné de riz basmati et de naan au fromage végétal", "Risotto aux champignons et aux épinards garni de parmesan végétal"],
+          dishes: ["Burger végan, galette de haricots rouges, tomates séchées et sauce au pesto, servi avec des frites de patates douces", "Curry de légumes au lait de coco et épices accompagné de riz basmati", "Risotto aux champignons et aux épinards"],
           deserts: ["Tarte au citron végane garnie de crème fouettée au coco", "Brownies végans,servis avec une boule de glace à la vanille de coco"],
         },
       },
@@ -64,9 +64,9 @@ export const restaurantsData = [
         "Plats basques gastronomiques dans un lieu aux tons chauds et colorés, avec chaises et comptoir en bois.",
       img: "/assets/au bascout.png",
       menu: {
-        entrees: ["Piquillos farcis à la morue et aux légumes", "Salade de tomates avec poivrons et oignons rouges assaisonnée d'une vinaigrette à l'ail et au piment d'Espelette"],
-        dishes: ["Axoa de veau (un ragoût de veau haché et de piments doux) servi avec du riz basmati", "Merlu koskera (un plat de poisson avec une sauce à base d'amandes, de vin blanc et de poivrons)", "Piperade: un plat de légumes avec des poivrons, des oignons et des tomates, servi avec du jambon de Bayonne et des œufs brouillés"],
-        deserts: ["Gâteau basque à la confiture de cerises noires avec tartelette à la pâte sablée et à la garniture de confiture de cerises noires", "Crème brûlée au piment d'Espelette aromatisée au piment d'Espelette et caramélisée au sucre roux"],
+        entrees: ["Piquillos farcis à la morue et aux légumes"],
+        dishes: ["Axoa de veau (un ragoût de veau haché et de piments doux) servi avec du riz", "Merlu koskera (un plat de poisson avec une sauce à base d'amandes)", "Piperade: un plat de légumes avec des poivrons, des oignons et des tomates, servi avec du jambon de Bayonne et des œufs brouillés"],
+        deserts: ["Gâteau basque à la confiture de cerises noires avec tartelette", "Crème brûlée au piment d'Espelette"],
       },
     },
     {
@@ -79,7 +79,7 @@ export const restaurantsData = [
       img: "/assets/le bastringue.png",
       menu: {
         entrees: ["Escargots de Bourgogne cuits au beurre à l'ail et aux herbes, servis dans leur coquille", "Terrine de campagne (viande de porc et de foie, servie avec des cornichons et de la moutarde)"],
-        dishes: ["Steak-frites: un steak de bœuf grillé servi avec des frites croustillantes et une sauce au poivre ou au Roquefort", "Ratatouille provençale: un plat végétarien de légumes d'été mijotés ensemble, tels que des courgettes, des aubergines, des poivrons, des tomates et des oignons, servi avec du riz ou du pain"],
+        dishes: ["Steak-frites avec sauce au poivre ou au Roquefort", "Ratatouille provençale: un plat végétarien de légumes d'été mijotés ensemble servi avec du riz ou du pain"],
         deserts: ["Crème brûlée à la vanille parfumée à la vanille et caramélisée au sucre roux", "Tarte Tatin"],
       },
     },
@@ -93,9 +93,9 @@ export const restaurantsData = [
           "Aux filets bleus vous accueille pour venir déguster la pêche du jour ! Dans un cadre magnifique avec vue directe sur la mer.",
         img: "/assets/Les filets bleue.png",
         menu: {
-          entrees: ["Soupe de poissons garnie de croûtons et de rouille", "Tartare de saumon coupé en petits dés, mélangé avec des herbes, de l'échalote et de l'huile d'olive, servi avec des toasts de pain grillé"],
-          dishes: ["Filet de dorade grillé avec une sauce au citron et aux herbes fraîches accompagné de riz basmati et de légumes grillés.", "Poisson du jour cuit en papillote avec des légumes de saison et une sauce à l'ail et au beurre.", "Pavé de saumon grillé avec une sauce hollandaise, servi avec des pommes de terre sautées et des légumes verts vapeur."],
-          deserts: ["Carpaccio d'ananas frais avec une sauce au rhum et aux épices douces, garni de feuilles de menthe et de noix de coco râpée.", "Crumble de fruits rouges avec une crème anglaise à la vanille et une boule de glace à la fraise."],
+          entrees: ["Soupe de poissons garnie de croûtons et de rouille", "Tartare de saumon coupé en petits dés, mélangé avec des herbes, de l'échalote et de l'huile d'olive"],
+          dishes: ["Poisson du jour cuit en papillote avec des légumes de saison et une sauce à l'ail et au beurre.", "Pavé de saumon grillé avec une sauce hollandaise, servi avec des pommes de terre sautées et des légumes verts vapeur."],
+          deserts: ["Carpaccio d'ananas frais avec une sauce au rhum et aux épices douces", "Crumble de fruits rouges avec une crème anglaise"],
         },
       },
   ];
