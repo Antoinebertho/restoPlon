@@ -6,28 +6,23 @@ import ModalRemove from "./ModalRemove";
 type ModalDiscoverProps = { onClose: () => void; restaurant: restaurantType };
 
 const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
-  const { favorites, addFavorite} =
-    useContext(FavoritesContext);
-    const [showModal, setShowModal] = useState(false);
+  const { favorites, addFavorite } = useContext(FavoritesContext);
+  const [showModal, setShowModal] = useState(false);
 
   const isFavorite = (restaurantId: number) => {
     return favorites.includes(restaurantId);
   };
 
-  const idRef = useRef(0)
+  const idRef = useRef(0);
 
   const handleDeleteClick = (id: number) => {
-    idRef.current= id
+    idRef.current = id;
     console.log(idRef);
-    
+
     setShowModal(true);
   };
 
-  const handleYesClick = () => {
-    setShowModal(false);
-  };
-
-  const handleNoClick = () => {
+  const closeModal = () => {
     setShowModal(false);
   };
 
@@ -94,21 +89,19 @@ const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
                   Ajouter
                 </button>
               )}
-              {showModal  && (
-        <ModalRemove
-          isOpen={showModal}
-          onYes={handleYesClick}
-          onClose={handleNoClick}
-          idRef={idRef.current}
-        />
-      )}
+              {showModal && (
+                <ModalRemove
+                  isOpen={showModal}
+                  onClose={closeModal}
+                  idRef={idRef.current}
+                />
+              )}
             </div>
           </div>
         </div>
       </div>
       <div onClick={onClose}></div>
     </div>
-    
   );
 };
 
