@@ -28,7 +28,7 @@ export const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
   };
 
   return (
-    <div className="fixed top-0 h-full overflow-y-scroll flex items-center justify-center outline-none focus:outline-none inset-0 z-50">
+    <div className="fixed top-2 h-full overflow-y-scroll flex items-center justify-center outline-none focus:outline-none inset-0 z-50">
       <div className="w-auto max-w-3xl mx-auto my-6 h-full">
         <div className="flex flex-col w-full bg-gray-800 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
           <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
