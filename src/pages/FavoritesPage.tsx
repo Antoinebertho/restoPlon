@@ -2,9 +2,9 @@ import { useContext } from "react";
 import "tailwindcss/tailwind.css";
 import { RestaurantContext } from "../context/restaurantContext";
 import { FavoritesContext } from "../context/FavoritesContext";
-import Card from "../components/Card";
+import {Card} from "../components/Card";
 
-const FavoritesPage = () => {
+export const FavoritesPage = () => {
   const { restaurants } = useContext(RestaurantContext);
   const { favorites } = useContext(FavoritesContext);
 
@@ -31,5 +31,3 @@ const FavoritesPage = () => {
     </section>
   );
 };
-
-export default FavoritesPage;

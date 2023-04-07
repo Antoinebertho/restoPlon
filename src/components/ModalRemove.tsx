@@ -7,7 +7,7 @@ interface ModalRemoveProps {
   idRef: number;
 }
 
-const ModalRemove: React.FC<ModalRemoveProps> = ({
+export const ModalRemove: React.FC<ModalRemoveProps> = ({
   isOpen,
   onClose,
   idRef,
@@ -45,5 +45,3 @@ const ModalRemove: React.FC<ModalRemoveProps> = ({
     </div>
   ) : null;
 };
-
-export default ModalRemove;

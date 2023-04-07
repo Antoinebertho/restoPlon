@@ -1,14 +1,14 @@
 import { useContext, useState, useRef } from "react";
 import "tailwindcss/tailwind.css";
-import ModalDiscover from "./ModalDiscover";
+import {ModalDiscover} from "./ModalDiscover";
 import { restaurantType } from "../models/restaurantType";
 import { FavoritesContext } from "../context/FavoritesContext";
-import ModalRemove from "./ModalRemove";
+import {ModalRemove} from "./ModalRemove";
 
 type CardProps = {
   restaurant: restaurantType;
 };
-const Card = ({ restaurant }: CardProps) => {
+export const Card = ({ restaurant }: CardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [selectedRestaurant, setSelectedRestaurant] =
@@ -97,5 +97,3 @@ const Card = ({ restaurant }: CardProps) => {
     </div>
   );
 };
-
-export default Card;

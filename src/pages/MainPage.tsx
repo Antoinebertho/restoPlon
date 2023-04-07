@@ -1,9 +1,9 @@
 import "tailwindcss/tailwind.css";
-import Card from "../components/Card";
+import {Card} from "../components/Card";
 import { RestaurantContext } from "../context/restaurantContext";
 import { useContext } from "react";
 
-const MainPage = () => {
+export const MainPage = () => {
   const { restaurants } = useContext(RestaurantContext);
   return (
     <section className="bg-gray-900 text-white">
@@ -20,5 +20,3 @@ const MainPage = () => {
     </section>
   );
 };
-
-export default MainPage;

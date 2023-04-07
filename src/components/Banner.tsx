@@ -1,7 +1,7 @@
 import "tailwindcss/tailwind.css";
 import { Link } from "react-router-dom";
 
-const Banner = () => {
+export const Banner = () => {
   const handleFavoritesClick = () => {};
   return (
     <header aria-label="Page Header" className="bg-gray-100">
@@ -33,5 +33,3 @@ const Banner = () => {
     </header>
   );
 };
-
-export default Banner;
