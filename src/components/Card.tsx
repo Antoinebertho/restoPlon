@@ -39,7 +39,7 @@ export const Card = ({ restaurant }: CardProps) => {
   };
 
   return (
-    <div>
+    <>
       <div
         key={restaurant.id}
         className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
@@ -94,6 +94,6 @@ export const Card = ({ restaurant }: CardProps) => {
           idRef={idRef.current}
         />
       )}
-    </div>
+    </>
   );
 };

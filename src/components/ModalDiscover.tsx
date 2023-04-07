@@ -28,9 +28,9 @@ export const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none --tw-translate-x: (-50%, -50%)">
-      <div className="relative w-auto max-w-3xl mx-auto my-6">
-        <div className="relative flex flex-col w-full bg-gray-800 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
+    <div className="fixed top-0 h-full overflow-y-scroll flex items-center justify-center outline-none focus:outline-none">
+      <div className="w-auto max-w-3xl mx-auto my-6 h-full">
+        <div className=" flex flex-col w-full bg-gray-800 border-0 rounded-2xl shadow-lg outline-none focus:outline-none">
           <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
             <h3 className="text-3xl font-semibold">{restaurant.name}</h3>
             <button
