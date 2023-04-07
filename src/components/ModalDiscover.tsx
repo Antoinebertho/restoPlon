@@ -1,7 +1,7 @@
 import { useContext, useRef, useState } from "react";
 import { restaurantType } from "../models/restaurantType";
 import { FavoritesContext } from "../context/FavoritesContext";
-import {ModalRemove} from "./ModalRemove";
+import { ModalRemove } from "./ModalRemove";
 import "tailwindcss/tailwind.css";
 
 type ModalDiscoverProps = { onClose: () => void; restaurant: restaurantType };
@@ -55,21 +55,27 @@ export const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
             <p className="mt-1 text-md font-extrabold text-center text-gray-300 underline ">
               Entrées
             </p>
-            <p className="mt-1 text-md font-semibold text-center  pb-3 text-gray-300 ">
-              {restaurant.menu.entrees.join(" ou ")}
-            </p>
+            <div className="mt-1 text-md font-semibold text-center pb-3 text-gray-300">
+              {restaurant.menu.entrees.map((entree) => (
+                <p key={entree}>{entree}</p>
+              ))}
+            </div>
             <p className="mt-1 text-md font-extrabold text-center text-gray-300 underline ">
               Plats
             </p>
-            <p className="mt-1 text-md font-semibold text-center pb-3 text-gray-300 ">
-              {restaurant.menu.dishes.join(" ou ")}
-            </p>
+            <div className="mt-1 text-md font-semibold text-center pb-3 text-gray-300">
+              {restaurant.menu.dishes.map((dish) => (
+                <p key={dish}>{dish}</p>
+              ))}
+            </div>
             <p className="mt-1 text-md font-extrabold text-center  text-gray-300 underline ">
               Desserts
             </p>
-            <p className="mt-1 text-md font-semibold text-center   text-gray-300 ">
-              {restaurant.menu.deserts.join(" ou ")}
-            </p>
+            <div className="mt-1 text-md font-semibold text-center pb-3 text-gray-300">
+              {restaurant.menu.deserts.map((desert) => (
+                <p key={desert}>{desert}</p>
+              ))}
+            </div>
             <div className="sm:flex sm:items-center sm:justify-between pt-2">
               <p className="mt-1 text-sx italic py-3 text-gray-300 ">
                 {restaurant.description_short}
@@ -105,5 +111,3 @@ export const ModalDiscover = ({ onClose, restaurant }: ModalDiscoverProps) => {
     </div>
   );
 };
-
-//top-[100px] 
